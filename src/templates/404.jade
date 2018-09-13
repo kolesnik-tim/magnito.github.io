@@ -1,0 +1,14 @@
+---
+title: 404
+---
+extends layouts/_layout
+block content
+  .error
+    .container
+      .row
+        .col-xs-12.center-xs
+          h2 что-то пошло не так!
+          p К сожалению такой страницы не существует или она находится в разработке. <br>Вы можете вернуться на главную
+          span 404
+          a(href="#").btn Вернуться на главную
+  include ./partials/_pop-up

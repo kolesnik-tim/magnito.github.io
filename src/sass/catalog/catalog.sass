@@ -1,0 +1,188 @@
+.catalog
+  padding-top: 50px
+  background-color: #fbfbfb
+  overflow: hidden
+  +r(1024)
+    background: none
+    padding-top: 30px
+  +r(767)
+    padding-top: 0
+  .home-hit__swiper
+    padding-bottom: 100px
+    background: $white
+    padding-top: 120px
+    +r(1024)
+      padding-top: 30px
+      padding-bottom: 25px
+    .swiper-button-next
+      +r(767)
+        right: 0px
+    .swiper-button-prev
+      +r(767)
+        left: 5px
+  .heading
+    justify-content: flex-start
+    +r(1024)
+      margin-bottom: 50px
+    +r(767)
+      margin-bottom: 30px
+    h2, h1
+      line-height: 1
+      text-align: left
+      padding-bottom: 10px
+      span
+        color: $lipstick-five
+  a.btn
+    margin-top: 30px
+    +center-relative-x
+    position: relative
+    +r(767)
+      margin-top: 0px
+  .block__img
+    float: right
+    width: 345px
+    margin-left: 30px
+    margin-bottom: 90px
+    +r(1024)
+      width: 315px
+      height: 315px
+    +r(767)
+      display: none
+    &__content
+      img
+        width: calc(100% - 30px)
+        position: relative
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+  &__filter
+    margin-bottom: 80px
+    +r(1024)
+      margin-bottom: 40px
+    .col-xs-6
+      +r(767)
+        padding-left: 0.7rem
+        padding-right: 0.7rem
+    &__block
+      height: 270px
+      border-radius: 25px
+      background-color: $white
+      box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.25)
+      +center-column
+      padding: 20px 10px
+      margin-bottom: 30px
+      position: relative
+      overflow: hidden
+      +tr
+      +r(1024)
+        min-height: 230px
+        height: auto
+      +r(767)
+        min-height: 130px
+        margin-bottom: 20px
+        padding: 15px 10px
+      &:hover
+        transform: scale(1.07)
+        box-shadow: 0px 2px 15px 0 rgba(0, 0, 0, 0.25)
+      img
+        height: 170px
+        +r(1024)
+          height: 130px
+        +r(767)
+          height: 70px
+      p
+        font-size: 18px
+        font-weight: bold
+        line-height: 1.22
+        letter-spacing: 0.5px
+        text-align: center
+        color: $greyish-brown-three
+        padding-top: 15px
+        +tr
+        &:hover
+          color: $rouge-two
+        +r(1024)
+          font-size: 15px
+        +r(767)
+          font-size: 8px
+          padding-top: 5px
+      span
+        font-size: 18px
+        font-weight: bold
+        line-height: 1.22
+        letter-spacing: 0.5px
+        text-align: center
+        color: $greyish-brown-three
+        padding-top: 5px
+        +r(1024)
+          font-size: 15px
+        +r(767)
+          font-size: 8px
+          padding-top: 5px
+        b
+          font-size: 21px
+          font-weight: bold
+          line-height: 1.5
+          letter-spacing: 0.6px
+          color: $rouge-two
+          display: inline-block
+          +r(1024)
+            font-size: 16px
+          +r(767)
+            font-size: 9px
+  &__info
+    position: relative
+    z-index: 1
+    border-bottom: 1px solid rgba($dark, 0.15)
+    padding-bottom: 25px
+    padding-top: 70px
+    +r(1024)
+      padding: 40px 15px 0px 0
+    +r(767)
+      padding-top: 30px
+      padding-bottom: 0
+      padding-right: 0
+      h2
+        font-size: 20px !important
+    .heading
+      +r(1024)
+        margin-bottom: 40px
+    &:last-child
+      border-bottom: none
+    &-secondary
+      .block__img
+        float: left
+        margin-right: 30px
+        margin-top: 20px
+    p
+      font-size: 15px
+      line-height: 1.47
+      letter-spacing: 0.4px
+      color: $dark-three
+      padding-bottom: 25px
+      +r(1024)
+        font-size: 14px
+      span
+        font-weight: 500
+        color: $lipstick-five
+    ul
+      margin-bottom: 30px
+    li
+      font-size: 14px
+      font-weight: 300
+      line-height: 1.57
+      letter-spacing: 0.4px
+      color: $dark-three
+      a
+        font-weight: 500
+        color: $lipstick-five
+    .equipment__phone
+      justify-content: flex-start
+      +r(1024)
+        justify-content: center
+        a
+          font-size: 60px
+      +r(767)
+        margin: 0 0 25px
+        a
+          font-size: 30px

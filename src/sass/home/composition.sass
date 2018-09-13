@@ -1,0 +1,137 @@
+.home-composition
+  padding: 120px 0
+  +r(1024)
+    padding-bottom: 0
+    padding-top: 70px
+  +r(767)
+    padding: 40px 0
+    padding-bottom: 0
+  .heading
+    +r(767)
+      margin-bottom: 20px
+    +r(398)
+      h2:before
+        left: 30%
+  &__content
+    position: relative
+    +center
+    +r(767)
+      flex-direction: column
+  img
+    height: 430px
+    +r(1024)
+      width: 500px
+      height: auto
+      position: relative
+      left: 30%
+      transform: translate(-50%)
+      z-index: -1
+    +r(767)
+      width: 85%
+      transform: none
+      left: 0
+      display: flex
+      order: -1
+  &__block
+    position: absolute
+    max-width: 250px
+    +r(767)
+      position: relative
+      left: 0
+      right: auto
+      top: 0
+      max-width: 100%
+    &:before
+      content: ''
+      height: 1px
+      width: 245px
+      background: $lipstick-six
+      position: absolute
+      left: 0
+      bottom: -30px
+      +r(1024)
+        bottom: -20px
+      +r(950)
+        width: 200px
+      +r(767)
+        display: none
+    &-1
+      left: 110px
+      top: 0
+      +r(1024)
+        top: -30px
+        left: 120px
+        p
+          max-width: 200px
+      +r(900)
+        left: 40px
+        &:before
+          width: 240px
+      +r(830)
+        &:before
+          width: 165px
+    &-2
+      left: 40px
+      bottom: 43%
+      &:before
+        width: 315px
+    &-3
+      top: 30%
+      right: 30px
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      +r(1024)
+        right: 0
+      &:before
+        width: 240px
+        right: 0
+        left: auto
+        +r(1024)
+          width: 220px
+        +r(900)
+          width: 190px
+      p
+        text-align: right
+    h3
+      font-size: 18px
+      font-weight: bold
+      line-height: 3.11
+      letter-spacing: 0.5px
+      color: $dark
+      position: relative
+      margin-bottom: -10px
+      +r(1024)
+        font-size: 15px
+      +r(767)
+        text-align: center
+      &:before
+        content: ''
+        position: absolute
+        left: -40px
+        top: 15px
+        width: 6px
+        height: 6px
+        background: $lipstick-seven
+        border-radius: 100%
+        border: 10px solid $white
+        display: block
+        box-sizing: content-box
+        box-shadow: 0 0 0 2px $lipstick-five
+        +r(767)
+          position: relative
+          left: -10px
+          display: inline-block
+          top: 3px
+          width: 4px
+          height: 4px
+          border: 6px solid $white
+    p
+      font-size: 15px
+      line-height: 1.47
+      letter-spacing: 0.4px
+      color: $dark
+      +r(1024)
+        font-size: 12px
+      +r(767)
+        text-align: center

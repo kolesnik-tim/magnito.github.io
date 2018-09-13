@@ -1,0 +1,80 @@
+.home-kinds
+  background: url('../img/home/kinds-bg.png') no-repeat
+  background-size: cover
+  background-position: 50% 50%
+  padding: 120px 0
+  overflow: hidden
+  +r(1024)
+    padding: 50px 80px 70px
+  +r(767)
+    padding: 35px 0
+  .btn
+    +r(1024)
+      margin-top: 20px
+    +r(767)
+      margin-top: 0
+  .heading
+    +r(1024)
+      margin-bottom: 40px
+    +r(767)
+      margin-bottom: 20px
+    h2:before
+      +r(767)
+        left: 50px
+  &__block
+    height: 270px
+    border-radius: 25px
+    background-color: $white
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.25)
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin-bottom: 50px
+    padding-bottom: 35px
+    padding-top: 25px
+    overflow: hidden
+    +tr
+    +r(1024)
+      margin-bottom: 30px
+    +r(767)
+      height: 200px
+      padding: 10px 0
+      margin-bottom: 50px
+      &:hover
+        transform: none
+    &:hover
+      transform: scale(1.07)
+      box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.25)
+    p
+      font-weight: bold
+      line-height: 1.22
+      letter-spacing: 0.5px
+      text-align: center
+      color: $greyish-brown-three 
+      font-size: 18px
+      padding-top: 20px
+      +tr
+      &:hover
+        color: $rouge-two
+      +r(767)
+        font-size: 13px
+        padding-top: 10px
+    span
+      font-weight: bold
+      line-height: 1.22
+      letter-spacing: 0.5px
+      text-align: center
+      color: $greyish-brown-three 
+      font-size: 18px
+      padding-top: 10px
+      +r(767)
+        font-size: 13px
+      b
+        color: $rouge-two
+    img
+      +r(767)
+        height: 120px
+  .swiper-container
+    overflow: visible
+    padding: 0 40px

@@ -1,0 +1,207 @@
+.home-sentence
+  overflow: hidden
+  +r(1024)
+    padding: 15px 0 90px
+  +r(767)
+    padding-top: 0
+    margin-top: -20px
+  .heading
+    margin-bottom: 50px
+    justify-content: flex-start
+    position: relative
+    z-index: 2
+    +r(767)
+      margin-bottom: 20px
+    h2
+      +r(767)
+        font-size: 18px
+  &__content
+    position: relative
+    padding-bottom: 85px
+    +r(1024)
+      padding: 30px 0 0
+      margin: 0 10px
+    +r(767)
+      padding-top: 0
+      margin: 0
+    &__before
+      position: absolute
+      left: -30px
+      top: 54%
+      transform: translate(0, -50%)
+      width: 1700px
+      height: 48%
+      border-radius: 10px
+      background-color: $white
+      box-shadow: 0px 5px 18px 0 rgba(0, 0, 0, 0.22)
+      z-index: 1
+      display: block
+      overflow: hidden
+      &:before
+        content: ''
+        background-image: linear-gradient(to right, #b91433, #e75875)
+        opacity: 0
+        +coverdiv
+        +tr
+      +r(1024)
+        // display: none
+        width: 100%
+        height: 100%
+        left: 50%
+        top: 0
+        transform: translate(-50%)
+        +r(767)
+          box-shadow: none
+      &.red
+        &:before
+          opacity: 1
+  .swiper-slide.red p
+    color: $white
+  &__text
+    +r(1024)
+      padding-left: 20px
+    +r(767)
+      box-shadow: 0px 5px 18px 0 rgba(0, 0, 0, 0.22)
+      border-radius: 10px
+      padding-top: 40px
+      padding: 40px 20px 0
+      margin-bottom: 30px
+    p
+      font-size: 22px
+      font-weight: 500
+      line-height: 1.36
+      letter-spacing: 0.6px
+      padding-bottom: 35px
+      color: $greyish-brown-two
+      max-width: 645px
+      +r(1024)
+        font-size: 18px
+      +r(767)
+        font-size: 14px
+        text-align: center
+        padding-bottom: 25px
+  &__info
+    position: absolute
+    right: 0
+    top: -130px
+    border-radius: 35px
+    background-color: $white
+    box-shadow: 0px 5px 18px 0 rgba(0, 0, 0, 0.22)
+    z-index: 4
+    width: 370px
+    height: 640px
+    padding: 30px
+    +center-column
+    +r(1024)
+      position: relative
+      width: auto
+      height: auto
+      top: 0
+      margin-right: 20px
+    +r(767)
+      box-shadow: 0px 5px 18px 0 rgba(0, 0, 0, 0.22)
+      width: 100%
+      padding: 20px
+    &__block
+      background-image: linear-gradient(to top, $purple, $lipstick-two)
+      border-top-right-radius: 35px
+      border-top-left-radius: 35px
+      height: 321px
+      width: 100%
+      +center
+      &-secondary
+        background-image: linear-gradient(to top, #bd1a36, #ee7356)
+      +r(1024)
+        max-height: 270px
+        max-width: 100%
+      +r(767)
+        height: 245px
+    h3
+      font-size: 18px
+      font-weight: bold
+      letter-spacing: 0.5px
+      color: $dark
+      padding: 30px 0
+      text-transform: uppercase
+      +r(1024)
+        font-size: 16px
+        padding-bottom: 15px
+    p
+      font-size: 15px
+      line-height: 1.47
+      letter-spacing: 0.4px
+      text-align: center
+      color: $dark !important
+      margin-bottom: 55px
+      +r(1024)
+        font-size: 14px
+        margin-bottom: 20px
+      +r(767)
+        font-size: 12px
+    a
+      font-size: 15px
+      font-weight: 500
+      line-height: 1.47
+      letter-spacing: 0.4px
+      text-align: center
+      color: $dark-35
+      text-transform: uppercase
+      position: relative
+      +center
+      &:after
+        position: absolute
+        right: -80px
+        +center
+        width: 50px
+        height: 50px
+        background: $greenish-teal
+        border-radius: 100%
+        content: $icon-add
+        font-family: 'iconfont'
+        color: $white
+        font-size: 20px
+        font-weight: 200
+        line-height: 1
+        +center
+        +r(1024)
+          width: 40px
+          height: 40px
+          position: relative
+          right: 0
+          margin-left: 20px
+  .swiper-container
+    padding: 150px 10px
+    +r(1024)
+      padding: 10px
+      padding-bottom: 150px
+    +r(767)
+      padding: 15px 5px 70px
+      margin-right: 0px
+  .swiper-pagination
+    bottom: 140px
+    +r(1024)
+      bottom: 75px
+    +r(767)
+      bottom: 40px
+  .swiper-button-prev, .swiper-button-next
+    right: -40px
+    left: auto
+    top: auto
+  .swiper-button-next
+    top: 51%
+    +r(1024)
+      top: auto
+      right: 20%
+      bottom: 55px
+    +r(767)
+      right: 0px
+      bottom: 30%
+  .swiper-button-prev
+    top: 60%
+    +r(1024)
+      left: 20%
+      top: auto
+      bottom: 55px
+    +r(767)
+      left: 0
+      bottom: 30%

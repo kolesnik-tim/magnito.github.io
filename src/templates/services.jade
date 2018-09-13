@@ -1,0 +1,78 @@
+---
+title: Услуги
+---
+extends layouts/_layout
+block content
+  +breadcrumbs(['Главная', 'Услуги'])
+  .services
+    .container
+      .services__block
+        .row.middle-xs
+          .col-xs-12
+            .block__img.block__img-secondary.hidden-xs
+              .block__img__content
+                img(src="img/services/services-1.png", alt="")
+            .heading
+              h2 Полиграфические услуги
+            .block__img.block__img-secondary.hidden-sm.hidden-md
+              .block__img__content
+                img(src="img/services/services-1.png", alt="")
+            p Полиграфические услуги, как правило, состоят из 3 этапов:
+            ul
+              li – Допечтаные процессы;
+              li – Печать магнитов;
+              li – Послепечатные процессы.
+            p Каждая продукция «Фабрики Магнитов» тщательно проходит все этапы печатных процессов: макетирование, дизайн, изготовление форм, печать, резка, вырубка, ламинирование, лакировка, упаковка, скругление углов.
+      .services__block
+        .row.middle-xs
+          .col-xs-12
+            .block__img.hidden-xs
+              .block__img__content
+                img(src="img/services/services-2.png", alt="")
+            .heading
+              h2 Допечатные процессы
+            .block__img.hidden-sm.hidden-md
+              .block__img__content
+                img(src="img/services/services-1.png", alt="")
+            p <span>Допечатные процессы</span> это очень ответственный шаг, ведь от этого процесса зависит, как будут выглядеть готовая продукция. В данную категорию относятся все этапы полиграфических процессов связанные с подготовкой макета к печати, а именно:
+            ul
+              li –  Подготовка дизайна будущего макета;
+              li –  Оцифровка макета (прорисовка макета в цифровом виде);
+              li –  Обработка изображения и текста;
+              li –  Bерстка макета;
+              li –  Изготовление печатной формы;
+      .services__block
+        .row.middle-xs
+          .col-xs-12
+            .block__img.block__img-secondary.hidden-xs
+              .block__img__content
+                img(src="img/services/services-1.png", alt="")
+            .heading
+              h2 Печать магнитов
+            .block__img.block__img-secondary.hidden-sm.hidden-md
+              .block__img__content
+                img(src="img/services/services-1.png", alt="")
+            p <span>Печать магнитов</span> называется процесс получения рисунка или изображения на оттиске винила. Существует множество разных способов печати. В Фабрике Магнитов используется самая качественная печать – прямая печать на офсетной машине Komori 528;
+      .services__block
+        .row.middle-xs
+          .col-xs-12
+            .block__img.hidden-xs
+              .block__img__content
+                img(src="img/services/services-4.png", alt="")
+            .heading
+              h2 Послепечатные процессы
+            .block__img.hidden-sm.hidden-md
+              .block__img__content
+                img(src="img/services/services-4.png", alt="")
+            p В <span>послепечатные процессы</span> относят все те действия, которые выполняют с напечатанными магнитами, чтобы придать продукции презентабельный вид.
+            p В данную категорию относят такие этапы:
+            ul
+              li – Резка магнитов;
+              li – Вырубка магнитов;
+              li – Ламинирование магнитов;
+              li – Лакировка магнитов;
+              li – Упаковка магнитов;
+              li – Скругление углов;
+      .services__phone
+        a(href="tel:84957830407") 8 (495) 783-04-07
+  include ./shares/calculation

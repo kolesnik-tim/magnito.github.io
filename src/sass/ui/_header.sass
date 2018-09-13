@@ -1,0 +1,436 @@
+.header
+  box-shadow: 0px 2px 12px 0 rgba(0, 0, 0, 0.1)
+  position: relative
+  height: 160px
+  +r(1024)
+    height: 150px
+  +r(767)
+    height: auto
+  &__toolbar
+    width: 100%
+    height: 50px
+    mix-blend-mode: undefined
+    background-color: $greyish-brown
+    display: flex
+    align-items: center
+    color: $white-six
+    +r(767)
+      display: none
+  &__primary
+    padding: 20px
+    border-bottom: 1px solid rgba($black, 0.15)
+    height: 112px
+    +r(1024)
+      height: 100px
+    +r(767)
+      height: 80px
+  &__mail
+    font-size: 15px
+    display: flex
+    align-items: center
+    font-size: 15px
+    letter-spacing: 0.9px
+    color: $white
+    font-weight: 300
+    +tr
+    &:hover
+      color: $lipstick
+    +r(1024)
+      justify-content: flex-end
+    i
+      margin-right: 9px
+  &__phone
+    display: inline-flex
+    align-items: center
+    margin-left: 50px
+    font-size: 18px
+    color: $white
+    text-decoration: none
+    +tr
+    &:hover
+      color: $lipstick
+    +r(1024)
+      margin-left: 20px
+    i
+      margin-right: 10px
+  &__callback
+    width: 130px
+    height: 30px
+    text-align: center
+    text-decoration: none
+    background-image: linear-gradient(165deg, $tealish, $greenish-teal)
+    border-radius: 15px
+    margin-left: 15px
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    font-size: 11px
+    font-weight: bold
+    color: $white
+    +tr
+    &:hover
+      box-shadow: 0px 3px 10px 0 $greenish-teal
+  &__social
+    +r(1024)
+      display: none
+    ul
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+      a
+        color: rgba($white, 0.5)
+        text-decoration: none
+        font-size: 15px
+        +tr
+        &:not(:last-child)
+          margin-right: 20px
+        &:hover
+          color: $white
+  .logo
+    width: 240px
+    display: block
+    +r(1024)
+      width: 200px
+    +r(767)
+      width: 130px
+    img
+      width: 100%
+      +r(767)
+        width: 135px
+  nav
+    flex: 1
+    padding-right: 50px
+    +r(1124)
+      display: flex
+      justify-content: space-between
+    +r(767)
+      display: none
+    .mobile
+      display: none
+      li
+        max-width: 180px
+        a
+          font-size: 14px
+      +r(1124)
+        display: block !important
+    ul
+      display: flex
+      align-items: center
+      justify-content: space-between
+      +r(1124)
+        display: none
+      li
+        &.active
+          a
+            color: $lipstick-five
+            &:before
+              opacity: 1
+      a
+        font-size: 18px
+        color: $greyish-brown
+        position: relative
+        +tr
+        &:before
+          content: ''
+          width: 100%
+          height: 2px
+          background: $lipstick-five
+          position: absolute
+          bottom: -43px
+          opacity: 0
+          +tr
+        &:hover
+          color: $lipstick-five
+          &:before
+            opacity: 1
+  &__primary__block
+    display: flex
+    justify-content: space-between
+    +r(767)
+      justify-content: flex-end
+  &__tools
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100px
+    +r(767)
+      width: 90px
+    &__search
+      position: relative
+      &:hover
+        i
+          color: $lipstick
+      i
+        color: $black-three
+        +tr
+      &:before
+        content: ''
+        width: 2px
+        height: 14px
+        background: rgba($black-three, 0.1)
+        position: absolute
+        right: -25px
+        top: 6px
+        +r(767)
+          right: -20px
+    &__burger
+      width: 30px
+      height: 30px
+      display: inline-flex
+      position: relative
+      z-index: 5
+      cursor: pointer
+      &:hover
+        span, span:before, span:after
+          background: $lipstick
+      &.active
+        span
+          background: transparent
+          &:before
+            width: 30px
+            transform: rotate(315deg)
+            top: 0
+            background: #e61852
+          &:after
+            width: 30px
+            transform: rotate(-315deg)
+            top: 0
+            background: #e61852
+      span
+        width: 15px
+        height: 2px
+        background: $black-three
+        display: block
+        position: relative
+        left: 15px
+        top: 15px
+        +tr
+        &:before
+          content: ''
+          position: absolute
+          width: 27px
+          height: 2px
+          top: -10px
+          background: $black-three
+          right: 0
+          transition: all 0.5s
+        &:after
+          content: ''
+          position: absolute
+          top: 10px
+          width: 27px
+          height: 2px
+          background: $black-three
+          right: 0
+          transition: all 0.5s
+
+  &__menu
+    position: absolute
+    z-index: 2
+    top: 162px
+    background: $white
+    width: 100%
+    padding: 25px 0
+    display: none
+    box-shadow: 0px 2px 12px 0 rgba(0, 0, 0, 0.1)
+    +r(767)
+      top: 80px
+    &__info
+      position: relative
+      height: 620px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      border-radius: 25px
+      +r(1024)
+        height: auto
+        align-items: center
+        padding: 30px
+        overflow: hidden
+      &:before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        z-index: -1
+        height: 100%
+        width: 1500px
+        border-radius: 25px
+        background-color: #d2d2d2
+        +r(1024)
+          width: 100%
+        +r(767)
+          display: none
+      img
+        width: 80%
+        margin-top: 100px
+        +r(1024)
+          margin-top: 0
+          width: 100%
+    &__social
+      padding-bottom: 15px
+      +r(1024)
+        padding-bottom: 0
+        padding-top: 20px
+      ul
+        display: flex
+        width: 250px
+        justify-content: space-between
+        margin-bottom: 30px
+        +r(1024)
+          width: 100%
+        i
+          color: $white
+          +tr
+          +r(767)
+            color: rgba(#1c2129, 0.75)
+        li:hover
+          i
+            color: #e61852
+      p
+        font-size: 12px
+        line-height: 1.67
+        letter-spacing: 0.3px
+        color: #6e7784
+        span
+          color: #e61852
+    &__block
+      &:hover, &.active
+        .header__menu__block__items
+          transform: scale(1.05)
+          +r(767)
+            transform: none
+          a, span
+            color: #e61852
+            +r(767)
+              color: #272d36
+            &:before
+              background: #e61852
+      &__items
+        padding-left: 30px
+        padding-top: 35px
+        +tr
+        +r(767)
+          padding-left: 0
+          +center
+          padding-top: 30px
+        a
+          font-size: 30px
+          font-weight: bold
+          line-height: 0.97
+          letter-spacing: 0.8px
+          color: #48515f
+          position: relative
+          padding-bottom: 15px
+          display: inline-block
+          +tr
+          i
+            font-size: 20px
+            margin-left: 10px
+            &.active
+              transform: rotate(180deg)
+            +r(767)
+              display: none
+            +tr
+          +r(1024)
+            font-size: 20px
+          +r(767)
+            padding-bottom: 0
+          &:before
+            content: ''
+            width: 300px
+            height: 1px
+            position: absolute
+            left: -40px
+            bottom: 0px
+            background: rgba($black, 0.15)
+            +tr
+            +r(767)
+              display: none
+        span
+          font-size: 12px
+          font-weight: bold
+          line-height: 1.67
+          letter-spacing: 0.3px
+          color: rgba(134, 145, 163, 0.75)
+          position: relative
+          top: -15px
+          +tr
+          +r(1024)
+            font-size: 10px
+          +r(767)
+            display: none
+    &__block-list
+      display: none
+      margin-left: 90px
+      +r(1024)
+        margin-left: 50px
+      li
+        margin-top: 8px
+        a
+          font-size: 14px
+          letter-spacing: 0.4px
+          color: #475160
+          padding: 6px 12px
+          display: inline-block
+          +tr
+          +r(1024)
+            font-size: 12px
+        &.active
+          a
+            color: $white
+            border-radius: 5px
+            background-color: $lipstick-three
+        &:hover
+          a
+            color: $white
+            border-radius: 5px
+            background-color: $lipstick-three
+    &__nav
+      li
+        a
+          font-size: 12px
+          font-weight: 500
+          line-height: 2
+          color: #494b4d
+        &:hover
+          a
+            color: #e61769
+    &__communication
+      margin-top: 60px
+      a
+        &.tel
+          font-size: 26px
+          line-height: 2.59
+          letter-spacing: 1.3px
+          color: #15181e
+          +center-column
+          margin-bottom: 20px
+          i
+            font-size: 35px
+            display: block
+        &.btn
+          width: 130px
+          height: 30px
+          background-image: linear-gradient(165deg, $tealish, $greenish-teal)
+          border-radius: 15px
+          +center
+          font-size: 11px
+          font-weight: bold
+          letter-spacing: 0.6px
+          color: $white
+          padding: 0
+          text-transform: none
+          position: relative
+          left: 50%
+          transform: translate(-50%)
+        &.mail
+          font-size: 18px
+          color: #15181e
+          +center-column
+          margin-bottom: 20px
+          margin-top: 60px
+          i
+            font-size: 30px
+            display: block
+            margin-bottom: 15px

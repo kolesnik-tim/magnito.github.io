@@ -1,0 +1,219 @@
+.catalog-card
+  padding-top: 50px
+  background-color: #fbfbfb
+  overflow: hidden
+  +r(1024)
+    padding-top: 0
+    background: none
+  .home-hit__swiper
+    padding-bottom: 100px
+    background: $white
+    padding-top: 120px
+    +r(1024)
+      padding-top: 0px
+      padding-bottom: 25px
+    .swiper-button-next
+      +r(767)
+        right: 0px
+    .swiper-button-prev
+      +r(767)
+        left: 5px
+  .heading
+    justify-content: flex-start
+    +r(1024)
+      margin-bottom: 40px
+    +r(767)
+      margin-bottom: 10px
+    h2, h1
+      line-height: 1
+      text-align: left
+      +r(1024)
+        letter-spacing: 0.6px
+  &__block
+    display: flex
+    justify-content: space-between
+    +r(767)
+      flex-direction: column
+  &__img
+    +r(767)
+      +center
+      margin-bottom: 20px
+    img
+      max-width: 360px
+      +r(1024)
+        height: 460px
+      +r(767)
+        height: 173px
+  &__size
+    display: flex
+    margin-bottom: 85px
+    max-width: 370px
+    +r(1024)
+      margin-bottom: 40px
+    +r(767)
+      width: 100%
+      align-items: center
+      margin-bottom: 30px
+    p
+      font-size: 16px
+      line-height: 1.13
+      letter-spacing: 0.4px
+      color: $dark
+      flex: 1
+      +r(767)
+        font-size: 12px
+    .selectize-input
+      border-radius: 20px
+      border: solid 1px $dark
+      font-size: 18px
+      font-weight: 500
+      letter-spacing: 0.5px
+      color: $dark
+      +center-y
+      padding-left: 15px
+      width: 200px
+      height: 40px
+    .selectize-dropdown .active
+      color: $lipstick
+      background: rgba(0, 0, 0, 0.05)
+    &__list
+      display: none
+      position: absolute
+      top: 39px
+      left: 50%
+      transform: translate(-50%)
+      width: 200px
+      background: $white
+      border: 1px solid #000
+      border-top: none
+      border-bottom-left-radius: 20px
+      border-bottom-right-radius: 20px
+      background: #fbfbfb
+      li
+        padding: 10px
+        border-top: 1px solid #000
+        a
+          font-size: 18px
+          font-weight: 500
+          letter-spacing: 0.5px
+          color: $dark
+          +tr
+        &:first-child
+          border-top: none
+        &:hover
+          a
+            color: $lipstick
+  &__table
+    max-width: 370px
+    border-radius: 25px
+    background-color: $white
+    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.35)
+    padding: 70px 30px
+    +r(1024)
+      padding: 30px
+      height: 100%
+    +r(767)
+      position: relative
+      left: 50%
+      transform: translate(-50%) 
+    h2
+      font-size: 22px
+      font-weight: bold
+      line-height: 1.36
+      letter-spacing: 0.6px
+      text-align: center
+      color: $lipstick-three
+      margin-bottom: 50px
+      +r(1024)
+        font-size: 20px
+        margin-bottom: 5px
+      +r(767)
+        font-size: 16px
+    tr
+      border-bottom: 1px solid rgba($dark, 0.15)
+      &:first-child
+        border-bottom: none
+        th
+          padding-bottom: 10px
+    th
+      font-size: 22px
+      font-weight: 500
+      line-height: 1.36
+      letter-spacing: 0.6px
+      text-align: center
+      color: $dark
+      +r(1024)
+        font-size: 21px
+      +r(767)
+        font-size: 16px
+      &:first-child
+        text-align: left
+      &:last-child
+        text-align: right
+    td
+      font-size: 18px
+      font-weight: 500
+      line-height: 2.78
+      letter-spacing: 0.5px
+      text-align: center
+      +r(1024)
+        font-size: 18px
+        line-height: 2.63
+      +r(767)
+        font-size: 13px
+      color: $dark
+      &:first-child
+        text-align: left
+      &:last-child
+        text-align: right
+  .block__img
+    float: right
+    width: 345px
+    margin-left: 30px
+    margin-bottom: 90px
+    +r(1024)
+      width: 315px
+      height: 315px
+    +r(767)
+      width: 165px
+      height: 165px
+      float: none
+      margin: 20px auto
+    &__content
+      +r(1024)
+        height: 100%
+      img
+        width: calc(100% - 30px)
+        position: relative
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+  &__info
+    padding: 120px 0
+    position: relative
+    z-index: 1
+    +r(1024)
+      padding: 20px 15px 30px 0
+    +r(767)
+      padding: 50px 0
+    .heading
+      margin-bottom: 40px
+      +r(1024)
+        margin-bottom: 20px
+    h2
+      padding-bottom: 10px
+      +r(767)
+        font-size: 18px !important
+      a
+        color: $lipstick-five
+    p
+      font-size: 15px
+      line-height: 1.47
+      letter-spacing: 0.4px
+      color: $dark-three
+      padding-bottom: 30px
+      +r(1024)
+        font-size: 14px
+      a
+        font-weight: 500
+        color: $lipstick-five

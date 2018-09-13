@@ -1,0 +1,88 @@
+.home-hit
+  padding-bottom: 130px
+  overflow: hidden
+  +r(1024)
+    padding-bottom: 50px
+  +r(767)
+    padding-bottom: 40px
+  h1
+    font-size: 76px
+    font-weight: bold
+    line-height: 0.98
+    color: $lipstick
+    position: relative 
+    margin-top: 20px
+    +r(1024)
+      font-size: 54px
+      text-align: center
+      padding-bottom: 35px
+      margin-bottom: 25px
+      p
+        font-size: 54px
+        padding-bottom: 0
+      &:before
+        left: 50%
+        transform: translate(-50%)
+        bottom: 0
+        height: 7px
+    +r(767)
+      font-size: 33px
+      margin-bottom: 10px
+      &:before
+        bottom: 13px
+      p
+        font-size: 33px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -80px
+      width: 200px
+      height: 10px
+      background-color: $lipstick
+    p
+      line-height: 1.05
+      letter-spacing: -1.9px
+      color: $dark
+      font-size: 76px
+  &__title
+    padding: 120px 0
+    +r(1024)
+      padding: 45px 0
+    +r(767)
+      padding: 0 0 20px
+    p
+      font-size: 15px
+      line-height: 1.47
+      letter-spacing: 0.4px
+      color: $dark
+      padding-bottom: 20px
+      +r(1024)
+        text-align: center
+  &__swiper
+    position: relative
+    +center-column
+    .heading
+      +r(767)
+        margin-bottom: 20px
+    .swiper-container
+      overflow: visible !important
+    .swiper-slide
+      +center
+      img
+        +r(767)
+          width: 85%
+    .swiper-button
+      &-next, &-prev
+        +r(767)
+          left: 0px
+        i
+          color: $dark
+          font-size: 50px
+          +r(767)
+            font-size: 25px
+      &-next
+        right: 30px
+        +r(767)
+          left: auto
+          right: -5px

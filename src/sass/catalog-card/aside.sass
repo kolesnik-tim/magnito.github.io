@@ -1,0 +1,151 @@
+.aside
+  +r(1024)
+    display: none
+  &__block
+    margin-bottom: 70px
+  &__title
+    position: relative
+    margin-bottom: 50px
+    h2, h4
+      font-size: 22px
+      font-weight: 500
+      line-height: 1
+      letter-spacing: 0.6px
+      color: $dark
+      background: #fbfbfb
+      display: inline-block
+      position: relative
+      z-index: 1
+      padding-right: 10px
+    &:before
+      content: ''
+      position: absolute
+      bottom: 8px
+      right: 0
+      width: 100%
+      height: 1px
+      background: rgba($lipstick-three, 0.35)
+  .aside-categories
+    margin-bottom: 30px
+    a
+      font-size: 18px
+      font-weight: 500
+      line-height: 1.22
+      letter-spacing: 0.5px
+      color: $dark
+      border-bottom: 1px solid rgba($black-three, 0.15)
+      display: block
+      position: relative
+      padding-bottom: 15px
+      i
+        position: absolute
+        right: 0
+        color: rgba($dark, 0.45)
+        font-size: 15px
+        +tr
+        &.active
+          transform: rotate(180deg)
+  &-list
+    display: none
+    margin-bottom: 50px
+    li
+      display: inline-block
+      margin-top: 8px
+      +tr
+      a
+        font-size: 16px
+        letter-spacing: 0.4px
+        color: $dark
+        padding: 6px 12px
+        display: inline-block
+        +tr
+      &.active
+        border-radius: 5px
+        background-color: $lipstick-three
+        a
+          color: $white
+      &:hover
+        border-radius: 5px
+        background-color: $lipstick-three
+        a
+          color: $white
+  &__article
+    border-bottom: 1px solid rgba($black-three, 0.15)
+    display: flex
+    padding: 15px 0
+    position: relative
+    span
+      +center
+      position: absolute
+      left: 5px
+      top: 7px
+      width: 24px
+      height: 24px
+      background-color: $purple-three
+      font-size: 11px
+      font-weight: bold
+      color: $white
+      border-radius: 100%
+    img
+      width: 100px
+      margin-right: 15px
+    p
+      font-size: 14px
+      font-weight: 500
+      letter-spacing: 0.4px
+      color: $dark
+      padding-top: 5px
+      +tr
+    &:hover
+      p
+        color: $lipstick-five
+  &__social
+    ul
+      display: flex
+      justify-content: space-between
+      border-bottom: 1px solid rgba($black-three, 0.15)
+      padding-bottom: 15px
+      i
+        font-size: 22px
+        color: $dark
+        +tr
+      li:hover
+        i
+          color: $lipstick-ten
+  &__sale
+    border-radius: 25px
+    background-color: $white-eight
+    padding: 50px 30px
+    position: relative
+    height: 335px
+    background-image: url('../img/aside-4.png')
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: 0 100%
+    h5
+      +center-column
+    p
+      font-size: 16px
+      font-weight: 500
+      line-height: 1.63
+      letter-spacing: 0.4px
+      text-align: center
+      color: $dark
+    b
+      font-size: 30px
+      font-weight: bold
+      line-height: 1.13
+      letter-spacing: 0.8px
+      text-align: center
+      color: $lipstick-ten
+    span
+      position: absolute
+      right: 20px
+      bottom: 70px
+      background-image: linear-gradient(to top, #7516b1, $lipstick-ten), linear-gradient($pinkish-red-two, $pinkish-red-two)
+      font-size: 100px
+      font-weight: 900
+      letter-spacing: 7.5px
+      -webkit-background-clip: text
+      background-clip: text
+      -webkit-text-fill-color: transparent

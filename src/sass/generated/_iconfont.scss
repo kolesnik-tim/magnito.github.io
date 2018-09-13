@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('eot'),
+    url('../fonts/iconfont.woff2') format('woff2'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$icon-add: "\EA01";
+$icon-arrow-down-3: "\EA02";
+$icon-clock: "\EA03";
+$icon-contact: "\EA04";
+$icon-down-arrow-1: "\EA05";
+$icon-down-arrow: "\EA06";
+$icon-facebook: "\EA07";
+$icon-left-arrow: "\EA08";
+$icon-location: "\EA09";
+$icon-mail: "\EA0A";
+$icon-od: "\EA0B";
+$icon-phone: "\EA0C";
+$icon-plus: "\EA0D";
+$icon-right-arrow-1: "\EA0E";
+$icon-right-arrow: "\EA0F";
+$icon-search: "\EA10";
+$icon-twitter: "\EA11";
+$icon-vk: "\EA12";
+$icon-youtube: "\EA13";
+
+
+%icon {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: auto;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  @extend %icon;
+  display: inline-block;
+}
+
+.icon-add:before { content: $icon-add; }
+.icon-arrow-down-3:before { content: $icon-arrow-down-3; }
+.icon-clock:before { content: $icon-clock; }
+.icon-contact:before { content: $icon-contact; }
+.icon-down-arrow-1:before { content: $icon-down-arrow-1; }
+.icon-down-arrow:before { content: $icon-down-arrow; }
+.icon-facebook:before { content: $icon-facebook; }
+.icon-left-arrow:before { content: $icon-left-arrow; }
+.icon-location:before { content: $icon-location; }
+.icon-mail:before { content: $icon-mail; }
+.icon-od:before { content: $icon-od; }
+.icon-phone:before { content: $icon-phone; }
+.icon-plus:before { content: $icon-plus; }
+.icon-right-arrow-1:before { content: $icon-right-arrow-1; }
+.icon-right-arrow:before { content: $icon-right-arrow; }
+.icon-search:before { content: $icon-search; }
+.icon-twitter:before { content: $icon-twitter; }
+.icon-vk:before { content: $icon-vk; }
+.icon-youtube:before { content: $icon-youtube; }

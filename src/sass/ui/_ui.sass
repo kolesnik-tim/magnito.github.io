@@ -1,0 +1,198 @@
+body
+  font-family: 'Ubuntu', sans-serif
+  font-size: 22px
+  overflow-x: hidden
+.container
+  max-width: 1170px
+  width: 100% !important
+  margin: 0 auto
+  height: 100%
+  +r(1024)
+    padding: 0 15px
+.row
+  height: 100%
+a
+  text-decoration: none
+.flex
+  display: flex
+
+
++r(767)
+	.hidden-xs
+		display: none !important
+@media only screen and (min-width: 768px) and (max-width: 1200px)
+	.hidden-sm
+		display: none !important
++rmin(1200)
+	.hidden-md
+		display: none !important
+
+
+
+.heading
+  +center-x
+  margin-bottom: 70px
+  h2, h1
+    font-size: 30px
+    font-weight: bold
+    line-height: 1.87
+    letter-spacing: 0.8px
+    text-align: center
+    color: $dark
+    position: relative
+    display: inline-block
+    +r(1024)
+      font-size: 26px
+      line-height: 1
+      padding-bottom: 15px
+    +r(767)
+      font-size: 21px
+    &:before
+      position: absolute
+      left: 0
+      bottom: 0
+      content: ''
+      width: 50px 
+      height: 3px
+      background: $lipstick-five
+.btn
+  font-size: 20px
+  font-weight: 500
+  line-height: 1.7
+  letter-spacing: 2px
+  color: $white
+  border-radius: 35px
+  background-image: linear-gradient(165deg, $barney, $lipstick-three)
+  height: 70px
+  padding: 0 50px
+  +center
+  display: inline-flex
+  text-transform: uppercase
+  +r(1024)
+    font-size: 16px
+    padding: 0 35px
+    height: 55px
+  +r(767)
+    
+
+.block__img
+  position: relative
+  &__content
+    border-radius: 25px
+    overflow: hidden
+    width: 100%
+    height: 100%
+    box-shadow: 0px 4px 20px 0 rgba(0, 0, 0, 0.25)
+    height: 345px
+    background: $white
+  &:before
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    top: -15px
+    left: -15px
+    background-image: linear-gradient(to top, #8016a7, #e01f59)
+    z-index: -1
+    border-radius: 25px
+  img
+    width: 110%
+  &-secondary
+    margin-top: 20px !important
+    &:before
+      top: -15px
+      right: -15px
+      left: auto
+
+
+.breadcrumbs
+  padding: 30px 0
+  +r(1024)
+    padding-top: 10px
+  ul
+    display: flex
+    flex-wrap: wrap
+  li
+    a
+      font-size: 12px
+      line-height: 1.67
+      letter-spacing: 0.3px
+      color: $warm-grey-two
+      +r(767)
+        font-size: 10px
+      i
+        position: relative
+        top: 2px
+        display: inline-block
+        padding: 0 4px
+        margin-right: 10px
+    &:last-child
+      a
+        color: $lipstick-five
+        cursor: default
+        i
+          display: none
+
+
+
+.selectize-input
+  background: none
+  border: none
+  box-shadow: none
+  border: 1px solid #2c323a
+  padding: 0 10px
+  transition: all 0.3s
+  width: 130px
+  height: 35px
+  border-radius: 35px
+  +center
+  justify-content: flex-start
+  &.input-active
+    box-shadow: none
+    display: flex !important
+    border-radius: 20px 20px 0 0 !important
+    &:after
+      transform: rotate(180deg)
+  input
+    display: none !important
+.selectize-control.single .selectize-input:after
+  content: $icon-down-arrow-1
+  transition: all 0.3s
+  border: none
+  font-family: 'iconfont'
+  width: 12px
+  height: 6px
+  +center
+  font-size: 10px
+.selectize-control
+  display: flex
+  justify-content: center
+.selectize-dropdown
+  border: 1px solid $white
+  border-top: none
+.selectize-input>*, .selectize-dropdown [data-selectable]
+  font-size: 14px
+  letter-spacing: 0.4px
+  color: #272d36
+  +tr
+.selectize-dropdown .active
+  background: $white
+  color: #000
+.selectize-dropdown [data-selectable]
+  &:hover
+    color: $lipstick-five
+
+
+
+.pages
+  margin: 30px 0
+  ul
+    +center
+    flex-direction: column
+    a
+      line-height: 2
+      font-size: 20px
+      color: $greyish-brown
+      +tr
+      &:hover
+        color: $lipstick-five

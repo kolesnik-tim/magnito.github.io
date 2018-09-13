@@ -1,0 +1,31 @@
+---
+title: Оплата и доставка
+---
+extends layouts/_layout
+block content
+  +breadcrumbs(['Главная', 'Оплата и доставка'])
+  .shares.delivery
+    .container
+      .row
+        .col-sm-6.col-xs-12
+          .heading
+            h1 Оплата и доставка
+          .shares__content
+            ul
+              li
+                a Оплатить заказ можно любым удобным для Вас способом.
+            p Оплата производится как за наличный, так и за безналичный расчёт.
+            p Доставка продукции производится собственным  автотранспортом.
+            p Отправка в другие города ТК.
+            p Или через курьерскую службу.
+          .shares__content__tel.hidden-sm.hidden-xs
+            a(href="tel:84957830407") 8 (495) 783-04-07
+        .col-sm-6
+          .block__img.block__img-secondary
+            .block__img__content
+              img(src="img/delivery-bg.png", alt="")
+        .col-xs-12.hidden-md.center-xs
+          .shares__content__tel
+            a(href="tel:84957830407") 8 (495) 783-04-07
+  include ./shares/calculation
+  include ./partials/_pop-up
